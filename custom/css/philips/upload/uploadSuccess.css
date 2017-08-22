@@ -1,0 +1,11 @@
+*{margin: 0;padding: 0;margin: 0 auto;}
+html,body{width: 100%;height: 100%;overflow: hidden;}
+#uploadSuccess{max-width: 100%;height: 100%;}
+#uploadSuccess .pageBackground img{position: absolute;width:100%;height: 100%;}
+
+#uploadSuccess .close{width:131px;height:40px; position: absolute;top:42.4%; margin: 0 auto; left: 0;right: 0;/* border: 1px solid #FFF; text-align: center;line-height: 40px;
+					  border-radius: 4px;box-shadow:1px 2px 5px #000; */color: #FFF;}
+#uploadSuccess .btn:active{box-shadow: 1px 2px 5px #9C9990 inset;}					  
+
+
+

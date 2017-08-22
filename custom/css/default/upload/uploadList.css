@@ -1,0 +1,11 @@
+*{margin: 0;padding: 0;margin: 0 auto;}
+html,body{width: 100%;height: 100%;overflow: hidden;}
+#uploadList{max-width: 100%;height: 100%;}
+#uploadList .pageBackground img{position: absolute;width:100%;height: 100%;}
+
+#uploadList .content-group{position: absolute;margin: 0 auto;left:4px;right: 0;top:4%;width:90%;height:89%;}
+#uploadList .content-group ul{height:100%;overflow-y: auto;}
+#uploadList .content-group ul li{list-style:none;border:1px solid #FFD27C;padding:10px;/* background:#FFF; */margin:2px;}
+#uploadList .content-group ul li p{height:30px;line-height:30px;font-size:12px;} 
+#uploadList .content-group ul li p .span-left{display:inline-block;width:50%;}
+#uploadList .content-group ul li p .span-right{}

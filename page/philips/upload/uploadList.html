@@ -1,0 +1,19 @@
+<div id="uploadList">
+	<div class="pageBackground"><img src="custom/image/philips/upload/uploadDetail.jpg"></div>
+	
+	<div class="content-group">
+		<ul>
+			<li ng-repeat="order in orderList" ng-click="orderDetail(order.applyId)">
+				<p>
+					<span class="span-left" ng-bind="'手机号：'+order.telephone"></span>
+					<span class="span-right" ng-bind="'时间：'+createTimeData"></span>
+				</p>
+				<p>
+					<span ng-if="order.redpacAmount == 0" class="span-left" ng-bind="'金额：未发放'"></span>
+					<span ng-if="order.redpacAmount !=0"  class="span-left" ng-bind="'金额：'+order.redpacAmount"></span>
+					<span class="span-right" ng-bind="'状态：'+order.applyStatus.text"></span>
+				</p>
+			</li>
+		</ul>
+	</div>
+</div>

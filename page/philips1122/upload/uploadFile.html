@@ -1,0 +1,38 @@
+<div id="uploadFile">
+	<div class="img-group">
+		<img src="custom/image/philips1122/upload/content.png">
+	</div>
+	<!-- <div class="wallet" ng-click="wallet()"></div> -->
+	<div class="content-group">
+		<div class="form-group">
+			<form name="uploaderForm" id="uploaderForm">
+				<div class="file-group" id="uploader">
+					<div class="uploadImg" id="filePicker">
+						<input type="file" name="file" tabindex="3" accept="image/*" size="3" name="pic" class="filePrew" id="uploadImg"> <label id="filePicker"></label>
+					</div>
+
+					<!-- <div class="previewImg queueList"></div> -->
+					<div class="previewImg queueList"></div>
+				</div>
+
+				<div class="input-group inputUserInfo">
+					<label for="telNumber">手机号：</label> <input type="tel" id="telNumber" class="telNumber" name="telNumber" ng-model="telNumber" placeholder="请输入手机号码！" maxlength="11" />
+					<button class="sendcode" ng-disabled="uploaderForm.telNumber.$invalid" ng-bind="description" ng-click="sendCode(telNumber)">发送验证码</button>
+				</div>
+
+				<div class="input-group inputUserInfo">
+					<label for="requestCode">验证码：</label> <input type="tel" maxlength="6" id="requestCode" class="requestCode" name="requestCode" ng-model="requestCode" placeholder="请输入验证码！" />
+				</div>
+
+				<div class="button-group">
+					<button class="uploadBtn submit btn" ng-click="submit()">提交</button>
+					<!-- <button class="resettingBtn btn" ng-click="resetting()">重置</button> -->
+					<button class="query btn" ng-click="query()">查询</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="footer-group"></div>
+</div>
